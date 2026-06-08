@@ -1,0 +1,119 @@
+/* Full page styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+}
+
+/* Main container */
+.text-to-speech-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card */
+.text-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+  text-align: center;
+}
+
+/* Heading */
+.text-box h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Textarea */
+.text-box textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.text-box textarea:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+.speak-btn {
+  margin-top: 20px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.speak-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .text-box {
+    padding: 25px;
+  }
+
+  .text-box h1 {
+    font-size: 26px;
+  }
+
+  .text-box textarea {
+    min-height: 150px;
+    font-size: 15px;
+  }
+
+  .speak-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .text-to-speech-container {
+    padding: 15px;
+  }
+
+  .text-box {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .text-box h1 {
+    font-size: 22px;
+  }
+
+  .text-box textarea {
+    min-height: 130px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .speak-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
